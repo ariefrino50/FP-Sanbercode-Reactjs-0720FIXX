@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+html,
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-image: url(/img/pattern.jpg); */
+  background-color: #303a5e;
+  font-family: "Slabo 27px", serif;
+  margin: 0px;
+  color: white !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #303a5e;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 9;
+}
+
+header h1 {
+  padding: 5px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white !important;
+  padding: 10px;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 250px;
+  height: 100vh;
+  background-color: #242a40;
+}
+
+#sidebar h1 {
+  padding-top: 25px;
+  margin-bottom: 100px;
+}
+
+#sidebar nav li {
+  display: block;
+  padding: 20px 0;
+  padding-left: 10px;
+  margin-left: 0;
+  text-align: left;
+  border-radius: 7px 0 0 7px;
+  transition: 0.2s;
+}
+
+#sidebar nav li:hover {
+  background-color: #303a5e;
+}
+
+section {
+  margin-left: 250px;
+  margin-right: 0;
+  background-color: #303a5e;
+  position: relative;
+  top: 70px;
+  padding: 20px;
+  margin-bottom: 100px;
+  min-height: 100vh;
+}
+
+table td {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+table.list-movie td {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+form.tambah-movie {
+  width: 80%;
+}
+
+form.tambah-movie input,
+form.tambah-movie textarea {
+  width: 500px;
+  float: right;
+}
+
+form.tambah-movie div {
+  margin: 20px 0;
+}
+
+form.tambah-movie label {
+  float: left;
+}
+
+.genre {
+  text-transform: capitalize;
+}
+
+h1.judul-section {
+  margin: 40px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+article {
+  border-bottom: 1px solid lightgrey;
+}
+
+h5 {
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  background-color: #242a40;
+  color: white;
+  height: 51px;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+}
+
+.container-movie {
+  width: 90%;
+  height: 200px;
+  background-color: #242a40;
+  margin: 10px 10px;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.container-movie img {
+  height: 100%;
+  width: 100%;
+}
+
+.kotak-movie {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.konten-movie {
+  opacity: 1;
+  position: absolute;
+  justify-self: start;
+  align-self: flex-end;
+  z-index: 8;
+  padding: 10px;
+}
+
+.konten-movie h3 {
+  margin-bottom: 7px;
+  text-transform: capitalize;
+}
+
+.konten-movie p {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.rating {
+  display: flex;
+  align-content: center;
+}
+
+/* LOGIN DAN REGISTER */
+
+.login-page {
+  margin: 0;
+  background-image: linear-gradient(
+      to right top,
+      rgba(53, 60, 140, 0.5),
+      rgba(53, 60, 140, 0.3)
+    ),
+    url(./theme/img/BackgroundLogin.jpg);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 11;
+  padding-top: 100px;
+}
+
+.judul {
+  color: white;
+}
+
+.judul h1 {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.judul p {
+  padding: 40px 0;
+  line-height: 32px;
+}
+
+.login-box {
+  background-color: white;
+  color: #242a40;
+  text-align: center;
+  padding: 24px;
+  margin: 0 30px;
+  /* height: 75vh; */
+}
+
+.login-box h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.login-box p.sub-h3 {
+  margin-bottom: 50px;
+}
+
+.login-box .h3-padding {
+  margin-bottom: 50px;
+}
+
+.login-box .form-fill {
+  margin: 10px 0;
+  font-size: 5px !important;
+}
+
+.login-box form {
+  width: 100%;
+}
+
+.button.btn-daftar {
+  margin-top: 50px;
+}
+
+.silahkan-masuk {
+  font-size: 12px;
+  padding: 20px;
+}
+
+.silahkan-masuk a {
+  text-decoration: none;
+  color: #353c8c;
+  font-weight: 600;
+}
+
+.silahkan-masuk a:hover {
+  color: #1f245a;
+}
+
+#search-box {
+  background-color: #242a40 !important;
+  width: 30vw !important;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#search-box .MuiSvgIcon-root {
+  display: flex;
+  padding-left: 7px;
+}
+
+#search-box .MuiInputBase-input {
+  background-color: #242a40 !important;
+  padding: 10px !important;
+  border-radius: 4px;
+  width: 25vw !important;
+  color: white !important;
+}
